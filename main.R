@@ -11,7 +11,7 @@ test_csv <- read.csv("dataset/test.csv")
 #valid <- train_csv[tail(shuffled_rows,floor(row_count*0.25)),]
 
 
-train <- as.h2o(train)
+train <- as.h2o(train_csv)
 #valid <- as.h2o(valid)
 test <- as.h2o(test_csv)
 
